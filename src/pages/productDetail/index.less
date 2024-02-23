@@ -1,0 +1,106 @@
+.product-detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .at-curtain__container {
+    width: 95%;
+    height: 1040px;
+
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 20px;
+    .at-curtain__body {
+      height: 100% !important;
+      .at-curtain__btn-close {
+        display: none;
+      }
+    }
+
+    .product-detail__top {
+      height: 820px !important;
+      padding: 20px;
+      box-sizing: border-box;
+      max-height: 820px;
+      overflow-y: auto;
+      .product-title {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        > View {
+          display: flex;
+        }
+        .close-icon {
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+        .product-title__image {
+          width: 140px;
+          height: 140px;
+          border-radius: 20px;
+          overflow: hidden;
+          margin-right: 20px;
+          image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .product-title__name {
+          font-size: 30px;
+          font-weight: 700;
+        }
+      }
+      .product-content {
+        padding-right: 20px;
+        .product-content__name {
+          height: 80px;
+          line-height: 80px;
+          font-weight: 600;
+          font-size: 25px;
+        }
+        .product-content__choose_item {
+          margin-right: 20px;
+          font-size: 20px;
+          &.is-active {
+            border: 1px solid #1e1e1e;
+            color: #1e1e1e;
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+    .product-footer {
+      height: 180px;
+      .product-footer_top {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #ccc;
+        height: 100px;
+        padding: 10px 30px;
+        .product-footer_top_left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          .price {
+            color: #7b1c1e;
+            font-size: 40px;
+            font-weight: 600;
+          }
+          .conditions {
+            color: #666;
+            font-size: 20px;
+          }
+        }
+      }
+      .add-btn {
+        background-color: #7b1c1e;
+        border: none;
+        color: #fff;
+        width: calc(100% - 60px);
+      }
+    }
+  }
+}

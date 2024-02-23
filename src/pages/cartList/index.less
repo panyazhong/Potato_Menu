@@ -1,0 +1,106 @@
+.cart-list-wrapper {
+  .home-footer {
+    position: absolute;
+    z-index: 999;
+    height: 100px;
+    bottom: -140px;
+    left: 0;
+    right: 0;
+    background-color: #efefef;
+    &.shopcar__active {
+      bottom: 0px;
+      transition: bottom 0.1s;
+    }
+
+    .home-footer__shopcar {
+      position: absolute;
+      left: 20px;
+      bottom: 20px;
+      background-color: #fff;
+      width: 120px;
+      height: 120px;
+      border-radius: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .home-footer_price {
+      margin-left: 160px;
+      font-size: 40px;
+      line-height: 100px;
+    }
+    .home-footer_btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      height: 60px;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      background-color: #7b1c1e;
+      border-radius: 30px;
+      color: #fff;
+      border: none;
+    }
+  }
+
+  .car-detail {
+    .at-float-layout__container {
+      height: calc(100% - 400px) !important;
+      min-height: calc(100% - 400px) !important;
+      background-color: #f6f8fa;
+      .layout-body {
+        height: calc(100% - 180px) !important;
+      }
+      .layout-body__content {
+        height: calc(100%) !important;
+      }
+      .clear-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #606770;
+        font-size: 20px;
+        .clear-all {
+          font-size: 20px;
+        }
+      }
+
+      .order-detail-list__item {
+        display: flex;
+        align-items: center;
+        height: 100px;
+        border-bottom: 1px solid #fff;
+        &_left {
+          width: 100px;
+          margin-left: -7px;
+          display: flex;
+          justify-content: flex-start;
+        }
+        &_center {
+          flex: 1;
+          height: 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .title {
+            color: #141414;
+            font-size: 24px;
+          }
+          .conditons {
+            font-size: 20px;
+            color: #606770;
+          }
+        }
+        &_right {
+          width: 200px;
+          height: 8 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
